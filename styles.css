@@ -1,0 +1,205 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.carousel-item {
+    height: 32rem;
+    background: #777;
+    color: white;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.container-1 {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 30px; 
+    margin-bottom: 30px;
+
+}
+
+.slider-wrapper {
+    position: relative;
+}
+
+.slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #000;
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%)
+}
+
+.slider-wrapper .slide-button:hover {
+    background: #444;
+}
+
+.slider-wrapper .slide-button#prev-slide {
+    left: -20px;
+}
+
+.slider-wrapper .slide-button#next-slide {
+    right: -20px;
+}
+
+.slider-wrapper .image-list {
+    display: grid;
+    gap: 18px;
+    font-size: 0;
+    overflow-x: auto;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-wrapper .image-list .image-item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card-img-top{
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.card{
+    border-radius: 30px;
+}
+
+h1.text-center {
+    margin-bottom: 50px;
+}
+
+.menu-line {
+    margin-bottom: 50px;
+}
+
+.form-area {
+    padding-top: 5%;
+}
+
+.row.single-form {
+    box-shadow: 0 2px 20px -5px rgba(red, green, blue, alpha)
+}
+
+/* Add margin between the left and right sections */
+.single-form .left {
+    margin-bottom: 50px;
+}
+
+/* Center the text within the left section */
+.left {
+    background: #ffcc00;
+    padding: 200px 100px;
+    text-align: center;
+}
+
+.left h2 {
+    font-family: poppins;
+    color: #fff;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.right {
+    padding: 70px 100px;
+    position: relative;
+}
+
+.right i {
+    position: absolute;
+    font-size: 80px;
+    left: -27px;
+    top: 40%;
+    color: #fff;
+}
+
+.form-control {
+    border: 2px solid #000;
+}
+
+.right button {
+    border: none;
+    border-radius: 0;
+    background: #252525;
+    width: 180px;
+    color: #fff;
+    padding: 15px 0;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.right button:hover {
+    background: #000;
+}
+
+footer {
+    background-color: #ffcc00;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    border-top: 5px solid #d4a017;
+    flex-shrink: 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .right i{
+        top: -52px;
+        transform: rotate(90deg);
+        left: 50%;
+    }
+}
+
+@media (max-width: 767px){
+    .left {
+        padding: 90px 15px;
+        text-align: center;;
+    }
+    .left h2{
+        font-size: 25px;
+    }
+    .right{
+        padding: 25px;
+    }
+    .right i{
+        top: -25px;
+        transform: rotate(90deg);
+    }
+   
+}
